@@ -1,10 +1,10 @@
-## 0. 코딩테스트 파이썬 주요 문법
+## 0. 코딩테스트 파이썬 필수 문법
 
 ### 입력
 
 ```
 # 정수
-n = int(sys.stdin.redline().rstrip())
+n = int(sys.stdin.readline().rstrip())
 
 # 한줄에 여러 변수
 n, m, k = map(int, sys.stdin.redline().split())
@@ -37,4 +37,12 @@ value = min(data)
 
 # 리스트 크기 구하기
 len(data)
+```
+
+### 증감연산자
+
+```
+# 파이썬은 증감연산자가 없다.
+i += 1
+i -= 1
 ```
