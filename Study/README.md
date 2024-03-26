@@ -63,6 +63,8 @@ print(a % 10)
 print(a // 10)
 ```
 
+## 1. 자료구조
+
 ### 우선순위 큐
 
 > 우선순위 큐(heapq, priority Queue)  
