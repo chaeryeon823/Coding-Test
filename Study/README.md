@@ -22,7 +22,7 @@ cards = [int(sys.stdin.readline()) for i in range(N)]
 plan = sys.stdin.readline().split()
 ```
 
-### 정렬
+### 리스트 정렬
 
 ```python
 # 정렬하기
@@ -43,6 +43,13 @@ value = min(data)
 
 # 리스트 크기 구하기
 len(data)
+
+# 리스트 내 전체 합
+sum(data)
+
+# 리스트 내 가장 큰 수의 인덱스 찾기
+data.index(max(data))
+
 ```
 
 ### 증감연산자
