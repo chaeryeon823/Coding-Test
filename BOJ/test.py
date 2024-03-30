@@ -1,7 +1,6 @@
 import sys
 
-n = int(sys.stdin.readline().rstrip())
-plan = list(map(int, sys.stdin.readline().split()))
-direction = ["L", "R", "U", "D"];
+dict = {1:"a", 2:"b", 3:"c"}
 
+print(list(dict.keys()))
   

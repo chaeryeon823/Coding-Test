@@ -22,19 +22,15 @@ cards = [int(sys.stdin.readline()) for i in range(N)]
 plan = sys.stdin.readline().split()
 ```
 
-### 리스트 정렬
+### 리스트
 
 ```python
-# 정렬하기
+# 리스트 정렬하기
 data.sort()
 
-# 2차원 배열 정렬하기
+# 2차원 리스트 정렬하기
 data.sort(key = lambda x:(x[1], x[0]))
-```
 
-### 함수
-
-```python
 # 리스트에서 가장 큰 수 찾기
 value = max(data)
 
@@ -50,6 +46,55 @@ sum(data)
 # 리스트 내 가장 큰 수의 인덱스 찾기
 data.index(max(data))
 
+# 리스트에서 최대 빈도 원소 구하기(Counter 사용)
+from collections import Conter
+c = Counter(list)
+max_item = count_items.most_common(n=1)
+max_item = max(c, key = c.get)
+
+# 리스트 요소만 출력
+print(*a)
+```
+
+### 딕셔너리
+
+> - 딕셔너리의 기본은 {Key1: Value1, Key2: Value2, ...} 이다.
+> - key는 고유 식별자 이므로 중복될 수 없다. 기존 key에 새 value를 할당하면 이전 값이 대체된다.
+> - value에는 list, tuple 등 모든 데이터 유형이 될 수 있다.
+
+```python
+# 딕셔너리 쌍 추가
+dict[1] = "a"
+
+# 딕셔너리 쌍 삭제
+del dic[1]
+
+# 딕셔너리에서 최대 빈도 원소 구하기
+max(dict, key=dict.get)
+
+# 딕셔너리에서 key 값만
+dict.keys()  # dict_keys 객체로 반환
+list(dict.keys())
+
+# 딕셔너리에서 value 값만
+dict.values()  # dict_values 객체로 반환
+list(dict.values())
+
+# 딕셔너리 key, value 쌍 얻기
+dict.items() # key와 value를 튜플로 묶은 dict_itmes객체로 반환
+
+# 딕셔너리 비우기
+dict.clear()
+
+# 키가 딕셔너리 않에 존재하는지
+1 in dict
+```
+
+### 함수
+
+```python
+# 절댓값 구하기
+abs(num)
 ```
 
 ### 증감연산자
@@ -68,6 +113,17 @@ print(a % 10)
 
 # 1의 자리수만 빼고 출력
 print(a // 10)
+```
+
+### 라이브러리
+
+```python
+
+# 알파벳 리스트 생성
+from string import ascii_letters
+import ascii_lowercase
+import ascii_uppercase
+
 ```
 
 ## 1. 자료구조
