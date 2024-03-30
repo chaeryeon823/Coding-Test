@@ -29,7 +29,7 @@ plan = sys.stdin.readline().split()
 data.sort()
 
 # 2차원 리스트 정렬하기
-data.sort(key = lambda x:(x[1], x[0]))
+data.sort(reverse=True)
 
 # 리스트에서 가장 큰 수 찾기
 value = max(data)
@@ -54,6 +54,9 @@ max_item = max(c, key = c.get)
 
 # 리스트 요소만 출력
 print(*a)
+
+# 리스트의 모든 요소를 하나의 문자열로 (요소는 문자만 가능)
+''.join(data)
 ```
 
 ### 딕셔너리
@@ -113,6 +116,37 @@ print(a % 10)
 
 # 1의 자리수만 빼고 출력
 print(a // 10)
+```
+
+### 문자열
+
+```python
+# 문자열에서 문자 치환
+text.replace('a', 'b', [바꿀 횟수])
+
+# 문자열에서 특정 문자 개수 세기
+text.count('a')
+
+# 문자열 소문자로 전환
+text.lower()
+
+# 문자열 대문자로 전환
+text.upper()s
+```
+
+### 수학
+
+```python
+# 제곱근 구하기
+import math
+math.sqrt(num)
+
+# 제곱 구하기
+import math
+math.pow(num)
+
+# float 유형 숫자가 정수인지 판별
+num.is_integer() # boolean 반환
 ```
 
 ### 라이브러리
@@ -204,3 +238,19 @@ max_item = heapq.heappop(max_heap)[1]
 - [[BOJ 11000] 강의실 배정 / G5](https://github.com/chaeryeon823/Coding-Test/blob/main/BOJ/11000.py)
 
 - [[BOJ 1927] 최소힙 / ](https://github.com/chaeryeon823/Coding-Test/blob/main/BOJ/1927.py)
+
+## 부록. 조각 코드
+
+> 코드를 작성하면서 나중에 필요할 만한 코드
+
+**약수의 합**
+
+```python
+answer = num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
+```
+
+**자연수 자리 합**
+
+```python
+answer = sum([int(i) for i in str(num)])
+```
