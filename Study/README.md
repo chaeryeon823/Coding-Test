@@ -146,3 +146,5 @@ max_item = heapq.heappop(max_heap)[1]
 - [[BOJ 1715] 카드정렬하기 / G4](https://github.com/chaeryeon823/Coding-Test/blob/main/BOJ/1715.py)
 
 - [[BOJ 11000] 강의실 배정 / G5](https://github.com/chaeryeon823/Coding-Test/blob/main/BOJ/11000.py)
+
+- [[BOJ 1927] 최소힙 / ](https://github.com/chaeryeon823/Coding-Test/blob/main/BOJ/1927.py)
