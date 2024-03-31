@@ -25,11 +25,20 @@ plan = sys.stdin.readline().split()
 ### 리스트
 
 ```python
+# 인덱스로 요소 제거하기
+data.pop(index)
+
+# 값으로 제거하기
+data.remove(value)
+
+
 # 리스트 정렬하기
 data.sort()
+data = sorted(data)
 
 # 2차원 리스트 정렬하기
 data.sort(reverse=True)
+data = sorted(data, reverse = True)
 
 # 리스트에서 가장 큰 수 찾기
 value = max(data)
@@ -57,6 +66,7 @@ print(*a)
 
 # 리스트의 모든 요소를 하나의 문자열로 (요소는 문자만 가능)
 ''.join(data)
+
 ```
 
 ### 딕셔너리
@@ -98,6 +108,24 @@ dict.clear()
 ```python
 # 절댓값 구하기
 abs(num)
+
+# 여러 리스트를 순서대로 요소를 뽑을 때
+for a, b in zip(a_list, b_list):
+
+# filter 함수
+# 특정 조건으로 걸러서 걸러진 요소들로 iterator 객체를 만들어서 반환
+# map 함수와 달리 요소의 포함여부를 확인하는 '필터링'
+arr = list(filter(lambda x: x % 2 == 0, arr))
+  ...
+
+# map 함수
+# 반복 가능한 iterable 객체를 받아서, 각 요소에 함수를 적용.
+# map(적용할 함수, 적용할 요소들)
+result = list(map(lambda x: x+1, arr))
+
+# 값으로 인덱스 찾기
+list_data.index("a")
+
 ```
 
 ### 증감연산자
@@ -131,7 +159,20 @@ text.count('a')
 text.lower()
 
 # 문자열 대문자로 전환
-text.upper()s
+text.upper()
+
+# 문자열 인덱스를 사용할 수 있지만, = 으로 할당할 수는 없다.
+
+# 문자 아스키 코드로 변환
+ord("A")
+
+# 아스키 코드를 문자로 변환
+chr(45)
+
+# 문자열 정렬
+sorted(s) # 정렬된 배열로 나옴. 기준 소문자
+sorted(s.split()) # 단어별 대문자 우선 정렬
+sorted(s.split(), key=s.lower) # 단어별 소문자 우선 정렬
 ```
 
 ### 수학
