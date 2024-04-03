@@ -24,6 +24,8 @@ plan = sys.stdin.readline().split()
 
 ### 리스트
 
+> https://velog.io/@code_angler/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%B9%84%EA%B5%90-%EA%B0%99%EC%9D%80%EA%B0%92-%EB%8B%A4%EB%A5%B8%EA%B0%92set%EC%9E%90%EB%A3%8C%ED%98%95%ED%95%A9%EC%A7%91%ED%95%A9%EA%B5%90%EC%A7%91%ED%95%A9%EC%B0%A8%EC%A7%91%ED%95%A9
+
 ```python
 # 인덱스로 요소 제거하기
 data.pop(index)
@@ -167,12 +169,21 @@ text.upper()
 ord("A")
 
 # 아스키 코드를 문자로 변환
-chr(45)
+chr(45)s
 
 # 문자열 정렬
 sorted(s) # 정렬된 배열로 나옴. 기준 소문자
 sorted(s.split()) # 단어별 대문자 우선 정렬
 sorted(s.split(), key=s.lower) # 단어별 소문자 우선 정렬
+
+# 문자열 숫자인지 확인하는 방법
+text.isdigit()
+
+# 문자열이 알파벳(한글) 또는 숫자인지 확인
+text.isalnum()
+
+# 문자열이 알파벳(한글) 인지 확인
+text.isalpha()
 ```
 
 ### 수학
@@ -294,4 +305,12 @@ answer = num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
 
 ```python
 answer = sum([int(i) for i in str(num)])
+```
+
+**행렬 덧셈**
+
+```python
+answer = [list(map(sum, zip(*z))) for x in zip(A, B)]
+answer = [c + d for c, d in zip(a, b) for a, b in zip(A, B)]
+
 ```
