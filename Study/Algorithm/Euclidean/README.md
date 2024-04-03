@@ -40,3 +40,5 @@ def lcm(a, b):
 ```
 
 ---
+
+- [[PSG] 12940 최대공약수와 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12940.py)

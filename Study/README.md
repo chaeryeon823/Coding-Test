@@ -312,5 +312,9 @@ answer = sum([int(i) for i in str(num)])
 ```python
 answer = [list(map(sum, zip(*z))) for x in zip(A, B)]
 answer = [c + d for c, d in zip(a, b) for a, b in zip(A, B)]
-
 ```
+
+**행렬 덧셈**
+
+-
+- [[PSG] 12940 최대공약수와 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12940.py)
