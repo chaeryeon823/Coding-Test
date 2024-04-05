@@ -1,3 +1,5 @@
+# 숫자 문자열과 영단어
+
 def solution(s):
     en = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     
