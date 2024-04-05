@@ -24,8 +24,6 @@ plan = sys.stdin.readline().split()
 
 ### 리스트
 
-> https://velog.io/@code_angler/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%B9%84%EA%B5%90-%EA%B0%99%EC%9D%80%EA%B0%92-%EB%8B%A4%EB%A5%B8%EA%B0%92set%EC%9E%90%EB%A3%8C%ED%98%95%ED%95%A9%EC%A7%91%ED%95%A9%EA%B5%90%EC%A7%91%ED%95%A9%EC%B0%A8%EC%A7%91%ED%95%A9
-
 ```python
 # 인덱스로 요소 제거하기
 data.pop(index)
@@ -138,16 +136,6 @@ i += 1
 i -= 1
 ```
 
-### 자리수 출력
-
-```python
-# 1의 자리수만 출력
-print(a % 10)
-
-# 1의 자리수만 빼고 출력
-print(a // 10)
-```
-
 ### 문자열
 
 ```python
@@ -199,6 +187,15 @@ math.pow(num)
 
 # float 유형 숫자가 정수인지 판별
 num.is_integer() # boolean 반환
+
+# 진법 변환
+# n진수 -> 10진수
+int('101',2)
+
+# 10진수 -> 2, 8, 16진수
+bin(10)
+oct(10)
+hex(10)
 ```
 
 ### 라이브러리
@@ -217,9 +214,9 @@ import ascii_uppercase
 ### 우선순위 큐
 
 > 우선순위 큐(heapq, priority Queue)  
-> https://velog.io/@mein-figur/Python%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%ED%81%90-heapq  
-> https://velog.io/@hsshin0602/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90priority-%ED%9E%99%ED%81%90heap  
-> https://chunsubyeong.tistory.com/88
+> [[Python]우선순위 큐, heapq](https://velog.io/@mein-figur/Python%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%ED%81%90-heapq)  
+> [[파이썬 알고리즘] 우선순위큐(priority) & 힙큐(heap)](https://velog.io/@hsshin0602/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90priority-%ED%9E%99%ED%81%90heap)  
+> [[자료구조] 힙(Heap) (feat. 이진 탐색 트리)](https://chunsubyeong.tistory.com/88)
 
 파이썬으로 우선순위 큐를 구현하는 방법은 PriorityQueue, heapq가 있다. 파이썬은 우선순위 큐 모델인 PriorityQueue를 제공한다.
 하지만 heapq가 더 빠르기 때문에 시간 초과가 나지 않기 위해 heapq를 사용하는 것을 지향한다. (이유는 위에 링크 참조)
@@ -316,5 +313,15 @@ answer = [c + d for c, d in zip(a, b) for a, b in zip(A, B)]
 
 **행렬 덧셈**
 
--
+- [유클리드 호제법](https://github.com/chaeryeon823/Coding-Test/tree/main/Study/Algorithm/Euclidean)
 - [[PSG] 12940 최대공약수와 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12940.py)
+
+**자리수 출력**
+
+```python
+# 1의 자리수만 출력
+print(a % 10)
+
+# 1의 자리수만 빼고 출력
+print(a // 10)
+```
