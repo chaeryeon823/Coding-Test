@@ -247,6 +247,22 @@ from string import ascii_letters
 import ascii_lowercase
 import ascii_uppercase
 
+# 날짜와 시간 다루기
+import datetime as dt
+
+x = dt.datetime.now()  # 현재 시간을 date클래스 객체로 반환
+x.year
+x.month
+x.day
+x.hour
+x.minute
+x.second
+x.microsecond
+x.weekday()  # 0부터 월요일
+
+td = dt1 - dt2
+td. days
+td.seconds, td.microseconds
 ```
 
 ## 1. 자료구조
