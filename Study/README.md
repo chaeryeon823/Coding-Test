@@ -67,6 +67,11 @@ print(*a)
 # 리스트의 모든 요소를 하나의 문자열로 (요소는 문자만 가능)
 ''.join(data)
 
+# 인덱싱
+A = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+A[::3]
+# [1, 4, 7]
+
 ```
 
 ### 딕셔너리
@@ -352,6 +357,16 @@ max_item = heapq.heappop(max_heap)[1]
 
 ```python
 answer = num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
+```
+
+**약수 배열**
+
+```python
+for i in range(1, int(n**(1/2)) + 1):
+  if (n % i == 0):
+    arr.append(i)
+    if (i ** 2) != n:
+      arr.append(n // i)
 ```
 
 **자연수 자리 합**
