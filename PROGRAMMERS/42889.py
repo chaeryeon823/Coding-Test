@@ -1,3 +1,5 @@
+# 실패율
+
 def solution(N, stages):
     answer = []
     arr = [0 for i in range(N + 1)]

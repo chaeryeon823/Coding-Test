@@ -181,53 +181,7 @@ i -= 1
 
 ### 문자열
 
-```python
-# 문자열에서 문자 치환
-text.replace('a', 'b', [바꿀 횟수])
-
-# 문자열에서 특정 문자 개수 세기
-text.count('a')
-
-# 문자열 소문자로 전환
-text.lower()
-
-# 문자열 대문자로 전환
-text.upper()
-
-# 문자열 인덱스를 사용할 수 있지만, = 으로 할당할 수는 없다.
-
-# 문자 아스키 코드로 변환
-ord("A")
-
-# 아스키 코드를 문자로 변환
-chr(45)s
-
-# 문자열 정렬
-sorted(s) # 정렬된 배열로 나옴. 기준 소문자
-sorted(s.split()) # 단어별 대문자 우선 정렬
-sorted(s.split(), key=s.lower) # 단어별 소문자 우선 정렬
-
-# 문자열 숫자인지 확인하는 방법
-text.isdigit()
-
-# 문자열이 알파벳(한글) 또는 숫자인지 확인
-text.isalnum()
-
-# 문자열이 알파벳(한글) 인지 확인
-text.isalpha()
-
-# 문자열 뒤집기
-text = text[::-1]
-
-# 문자열에 원하는 크기까지 0채우기
-text.zfill(10)
-
-# 문자열에 원하는 크기까지 문자 채우기
-text.rjust(10, '*')
-
-
-
-```
+- [문자열 함수 모음](https://github.com/chaeryeon823/Coding-Test/blob/main/Study/StringFunc.md)
 
 ### 수학
 
