@@ -250,6 +250,12 @@ int('101',2)
 bin(10)
 oct(10)
 hex(10)
+
+# 순열(순서있고 중복 없는)
+arr = list(permutations(data, 2))
+
+# 조합(순서 상관 없는 경우의 수)
+arr = list(combinations(data, 2))
 ```
 
 ### 라이브러리
@@ -391,7 +397,7 @@ answer = [list(map(sum, zip(*z))) for x in zip(A, B)]
 answer = [c + d for c, d in zip(a, b) for a, b in zip(A, B)]
 ```
 
-**행렬 덧셈**
+**최대공약수 최소공배수**
 
 - [유클리드 호제법](https://github.com/chaeryeon823/Coding-Test/tree/main/Study/Algorithm/Euclidean)
 - [[PSG] 12940 최대공약수와 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12940.py)
@@ -405,3 +411,7 @@ print(a % 10)
 # 1의 자리수만 빼고 출력
 print(a // 10)
 ```
+
+**소수 구하기**
+
+- [에라토스테네스의 체](https://github.com/chaeryeon823/Coding-Test/tree/main/Study/Algorithm/SieveOfEratostenes)
