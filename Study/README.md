@@ -106,6 +106,15 @@ dict.clear()
 
 # 키가 딕셔너리 않에 존재하는지
 1 in dict
+
+# value 값을 기준으로 오름차순 정렬
+sorted(dic.items(), key=lambda x:x[1]))       # 딕셔너리를 튜플로 바꿔 오름차순 정렬
+dict(sorted(dic.items(), key=lambda x:x[1]))) # 튜플로 바꿔 정렬 후, 다시 딕셔너리로
+sorted(dic, key=lambda x:dic[x]))             # value값을 기준으로 정렬한 키 값
+
+# key 값을 기준으로 오름차순 정렬
+sorted(dic.items())
+dict(sorted(dic.items())
 ```
 
 ### 집합
