@@ -223,7 +223,8 @@ text = text[::-1]
 text.zfill(10)
 
 # 문자열에 원하는 크기까지 문자 채우기
-text.rjulst('*')
+text.rjust(10, '*')
+
 
 
 ```
