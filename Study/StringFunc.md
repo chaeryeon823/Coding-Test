@@ -19,7 +19,7 @@ text.upper()
 ord("A")
 
 # 아스키 코드를 문자로 변환
-chr(45)s
+chr(45)
 
 # 문자열 정렬
 sorted(s) # 정렬된 배열로 나옴. 기준 소문자
@@ -124,4 +124,66 @@ result = p.findall("life is too short")
 
 ```
 
-(추가하기)
+**문자열 소비가 없는 메타 문자**
+
+1. |
+
+   > or과 동일한 의미
+
+2. ^
+   > 문자열의 맨 처음과 일치, re.MULTILINE을 사용하면 여러 줄의 문자열일 때 각 줄의 처음과 일치
+
+```
+re.search('^Life', 'Life is too short') # 매치
+```
+
+3. $
+   > 문자열의 끝과 일치
+
+```
+re.search('short$', 'Life is too short') # 매치
+```
+
+4. \A
+
+   > 문자열의 처음과 매치
+
+5. \Z
+
+   > 문자열의 끝과 매치
+
+6. \b
+   > 단어 구분자, 화이트 스페이스
+
+```
+p = re.complie(r'\bclassn')
+p.search('no class at all') # 매치
+```
+
+- `\b`는 파이썬 리터럴 규칙에 따르면 백스페이스를 의미하므로, 단어 구분자라는 것을 알려주기 위해 `r`을 반드시 붙여야 한다.
+
+7. \B
+   > 화이트 스페이스로 구분된 단어가 아닌 경우
+
+```
+p = re.compile(r'\Bclass\B')
+p.search('no class at all') # 불일치
+```
+
+**그루핑**
+
+```
+p = re.complie('(ABC)+')
+m = p.search('ABCABCABC OK?') # 매치
+m.group() # ABCABCABC
+
+P = re.compile(r'(\w+)\s+(\d+[-]\d+[-]\d+)')
+m = p.search('park 010-1234-1234')
+m.group(1)   # park
+m.group(2)   # 010-1234-1234
+
+p = re.compile(r"(?P<name>\w+)\s+((\d+)[-]\d+[-]\d+)")
+m = p.search("park 010-1234-1234")
+m.group("name")    # park
+
+```
