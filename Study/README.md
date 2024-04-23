@@ -22,6 +22,10 @@ cards = [int(sys.stdin.readline()) for i in range(N)]
 plan = sys.stdin.readline().split()
 ```
 
+### 문자열
+
+- [문자열 문법 모음](https://github.com/chaeryeon823/Coding-Test/blob/main/Study/StringFunc.md)
+
 ### 리스트
 
 ```python
