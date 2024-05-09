@@ -375,3 +375,23 @@ print(a // 10)
 **소수 구하기**
 
 - [에라토스테네스의 체](https://github.com/chaeryeon823/Coding-Test/tree/main/Study/Algorithm/SieveOfEratostenes)
+
+**피보나치 수**
+
+>
+
+```python
+def solution(n):
+    answer = 0
+    if n == 0:
+        return 0
+    if n == 1 or n == 2:
+        return 1
+
+    a, b = 1, 1
+
+    for i in range(1, n):
+        a, b = b, a+b
+
+    return a % 1234567
+```
