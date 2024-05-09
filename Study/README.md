@@ -39,6 +39,8 @@ data.remove(value)
 # 리스트 정렬하기
 data.sort()
 data = sorted(data)
+# 정렬할 때 조건은 sorted 함수 안 key 값 활용
+data = sorted(data, key = lambda x : x*3, reverse=True)
 
 # 2차원 리스트 정렬하기
 data.sort(reverse=True)
