@@ -1,3 +1,5 @@
+# 카펫
+# lv 2
 
 def solution(brown, yellow):
     answer = []
