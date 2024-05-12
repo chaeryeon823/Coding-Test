@@ -378,8 +378,6 @@ print(a // 10)
 
 **피보나치 수**
 
->
-
 ```python
 def solution(n):
     answer = 0
@@ -394,4 +392,21 @@ def solution(n):
         a, b = b, a+b
 
     return a % 1234567
+```
+
+- [[PGS] 피보나치 수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12945.py)
+
+**소인수 분해**
+
+```python
+def prime_factor(n):
+  factors = []
+  i = 2
+  while i <= n:
+    if n % i == 0:
+      factors.append(i)
+      n = n / i
+    else:
+      i = i + 1
+  return factors
 ```
