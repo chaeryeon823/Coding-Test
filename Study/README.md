@@ -360,7 +360,8 @@ answer = [c + d for c, d in zip(a, b) for a, b in zip(A, B)]
 **최대공약수 최소공배수**
 
 - [유클리드 호제법](https://github.com/chaeryeon823/Coding-Test/tree/main/Study/Algorithm/Euclidean)
-- [[PSG] 12940 최대공약수와 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12940.py)
+- [[PGS] 12940 최대공약수와 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12940.py)
+- [[PGS] 12953 N개의 최소공배수](https://github.com/chaeryeon823/Coding-Test/blob/main/PROGRAMMERS/12953.py)
 
 **자리수 출력**
 
