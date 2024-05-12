@@ -338,10 +338,10 @@ answer = num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
 
 ```python
 for i in range(1, int(n**(1/2)) + 1):
-  if (n % i == 0):
-    arr.append(i)
-    if (i ** 2) != n:
-      arr.append(n // i)
+    if (n % i == 0):
+      arr.append(i)
+      if (i ** 2) != n:
+        arr.append(n // i)
 ```
 
 **자연수 자리 합**
@@ -400,13 +400,13 @@ def solution(n):
 
 ```python
 def prime_factor(n):
-  factors = []
-  i = 2
-  while i <= n:
-    if n % i == 0:
-      factors.append(i)
-      n = n / i
-    else:
-      i = i + 1
-  return factors
+    factors = []
+    i = 2
+    while i <= n:
+      if n % i == 0:
+        factors.append(i)
+        n = n / i
+      else:
+        i = i + 1
+    return factors
 ```
