@@ -199,6 +199,10 @@ math.sqrt(num)
 import math
 math.pow(num)
 
+# 로그
+import math
+math.log2(num)
+
 # float 유형 숫자가 정수인지 판별
 num.is_integer() # boolean 반환
 
