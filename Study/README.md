@@ -328,6 +328,23 @@ max_item = heapq.heappop(max_heap)[1]
 
 - [[BOJ 1927] 최소힙 / ](https://github.com/chaeryeon823/Coding-Test/blob/main/BOJ/1927.py)
 
+### DEQUE
+
+```python
+from collections import deque
+
+# 삽입
+dq.append()
+dq.appendleft()
+
+# 삭제
+dq.pop() # 마지막 요소
+dq.popleft()
+
+# 좌우 반전
+dq.reverse()
+```
+
 ## 부록. 조각 코드
 
 > 코드를 작성하면서 나중에 필요할 만한 코드
