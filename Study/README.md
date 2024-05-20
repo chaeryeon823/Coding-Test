@@ -251,6 +251,9 @@ td.seconds, td.microseconds
 
 ## 1. 자료구조
 
+- [DEQUE](https://github.com/chaeryeon823/Coding-Test/blob/main/Study/DataStructure/Deque.md)
+- [Priority Queue](https://github.com/chaeryeon823/Coding-Test/blob/main/Study/DataStructure/PriorityQueue.md)
+
 ## 부록. 조각 코드
 
 > 코드를 작성하면서 나중에 필요할 만한 코드
