@@ -27,7 +27,14 @@ def check_bracket(st):
 def solution(s):
     answer = 0
     l = len(s)
-    s = s * 2
     for i in range(l):
+        tmp = s[0]
         answer += check_bracket(s[i:i+l])
+        s = s + tmp
+    # s = s * 2
+    # for i in range(l):
+    #     answer += check_bracket(s[i:i+l])
     return answer
+
+
+print(solution("[](){}"))
