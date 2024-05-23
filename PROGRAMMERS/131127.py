@@ -1,3 +1,7 @@
+# 할인 행사
+# lv 2
+# Counter 카운터
+
 from collections import Counter
 
 def check(dict_want_number, dis):
