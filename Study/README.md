@@ -171,8 +171,24 @@ arr = list(filter(lambda x: x % 2 == 0, arr))
 # map(적용할 함수, 적용할 요소들)
 result = list(map(lambda x: x+1, arr))
 
+# functools.reduce
+# iterable 객체의 요소에 차례대로 누적 적용하여 객체를 하나의 값으로 줄이는 함수.
+# TODO : functools 다른 함수 사용시 라이브러리 챕터로 이동
+
+import functools
+
+data = [1, 2, 3, 4, 5]
+result = functools.reduce(lambda x, y: x + y, data)
+print(result)
+
+
 # 값으로 인덱스 찾기
 list_data.index("a")
+
+# index는 존재하지 않는 값을 찾으면 Error
+# find는 -1  반환
+list_data.find("a")
+list_data.find("a", 1, 10)
 
 ```
 
