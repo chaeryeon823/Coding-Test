@@ -15,4 +15,6 @@ def solution(clothes):
     for value in dictionary.values():
         answer *= (value + 1)
     
+    # answer = functools.reduce(lambda x, y : x*(y + 1), dictionary.values(), 1)
+
     return answer - 1
