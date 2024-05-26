@@ -61,12 +61,6 @@ sum(data)
 # 리스트 내 가장 큰 수의 인덱스 찾기
 data.index(max(data))
 
-# 리스트에서 최대 빈도 원소 구하기(Counter 사용)
-from collections import Conter
-c = Counter(list)
-max_item = count_items.most_common(n=1)
-max_item = max(c, key = c.get)
-
 # 리스트 요소만 출력
 print(*a)
 
@@ -178,7 +172,7 @@ result = list(map(lambda x: x+1, arr))
 import functools
 
 data = [1, 2, 3, 4, 5]
-result = functools.reduce(lambda x, y: x + y, data)
+result = functools.reduce(lambda x, y: x + y, data, 0)
 print(result)
 
 
@@ -263,6 +257,31 @@ x.weekday()  # 0부터 월요일
 td = dt1 - dt2
 td. days
 td.seconds, td.microseconds
+
+
+# 리스트에서 최대 빈도 원소 구하기(Counter 사용)
+from collections import Counter
+c = Counter(list)
+max_item = count_items.most_common(n=1)
+max_item = max(c, key = c.get)
+
+
+# Counter를 활용해서 합집합, 교집합, 차집합을 구할 수 있다.
+# set 집합을 통해서 구할 수 있지만 Counter를 사용하면 다중 집합도 가능.
+lst1 = ['a','b','c','a','c','f','g']
+tup1 = ('b','d','e','e','f','f','g','h','h')
+
+ct1 = collections.Counter(lst1)
+ct2 = collections.Counter(tup1)
+
+print(ct1+ct2)                            # 합집합 요소 갯수 세기
+print(list((ct1+ct2).elements()))         # 합집합 리스트
+
+print(ct1&ct2)                            # 교집합 요소 갯수 세기
+print(list((ct1+ct2).elements()))         # 교집합 리스트
+
+print(ct1-ct2)                            # 교집합 요소 갯수 세기
+print(list((ct1-ct2).elements()))         # 교집합 리스트
 ```
 
 ## 1. 자료구조
