@@ -44,6 +44,13 @@ text.zfill(10)
 # 문자열에 원하는 크기까지 문자 채우기
 text.rjust(10, '*')
 
+# 문자열이 특정 문자로 시작하는지 확인
+str = 'banana'
+result = str.startswith('ba')
+
+# 문자열이 특정 문자로 끝나는지 확인
+str = 'banana'
+result = str.endswith('na')
 
 ```
 
