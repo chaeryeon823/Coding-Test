@@ -52,6 +52,9 @@ result = str.startswith('ba')
 str = 'banana'
 result = str.endswith('na')
 
+# 문자열 하나씩 끊어서 리스트로
+list(srt)
+
 ```
 
 ### 정규 표현식
