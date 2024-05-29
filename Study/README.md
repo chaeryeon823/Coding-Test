@@ -18,6 +18,14 @@ for i in range(n):
 
 cards = [int(sys.stdin.readline()) for i in range(N)]
 
+# ?개의 줄 입력
+while True:
+  try:
+    n, m, k = map(int, sys.stdin.readline().split())
+    ...
+  except:
+    break
+
 # 문자열 리스트
 plan = sys.stdin.readline().split()
 ```
