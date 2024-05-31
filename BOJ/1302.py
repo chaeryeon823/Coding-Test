@@ -1,4 +1,6 @@
 # 베스트셀러
+# s4
+# 문자열, 빈도수
 
 # import sys
 # from collections import Counter
