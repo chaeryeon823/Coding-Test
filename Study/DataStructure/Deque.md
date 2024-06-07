@@ -1,4 +1,4 @@
-### DEQUE
+## Deque
 
 ```python
 from collections import deque

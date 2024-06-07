@@ -1,4 +1,4 @@
-### 우선순위 큐
+## 우선순위 큐
 
 > 우선순위 큐(heapq, priority Queue)  
 > [[Python]우선순위 큐, heapq](https://velog.io/@mein-figur/Python%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%ED%81%90-heapq)  
