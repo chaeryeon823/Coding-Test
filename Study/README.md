@@ -296,11 +296,6 @@ print(ct1-ct2)                            # 교집합 요소 갯수 세기
 print(list((ct1-ct2).elements()))         # 교집합 리스트
 ```
 
-## 1. 자료구조
-
-- [DEQUE](https://github.com/chaeryeon823/Coding-Test/blob/main/Study/DataStructure/Deque.md)
-- [Priority Queue](https://github.com/chaeryeon823/Coding-Test/blob/main/Study/DataStructure/PriorityQueue.md)
-
 ## 부록. 조각 코드
 
 > 코드를 작성하면서 나중에 필요할 만한 코드
@@ -388,3 +383,7 @@ def prime_factor(n):
         i = i + 1
     return factors
 ```
+
+**배수 판정법**
+
+- [배수 판정법 위키](https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%88%98_%ED%8C%90%EC%A0%95%EB%B2%95)
