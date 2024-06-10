@@ -196,6 +196,10 @@ list_data.index("a")
 list_data.find("a")
 list_data.find("a", 1, 10)
 
+data = '1 + 2'
+result = eval(data)
+# 3
+
 ```
 
 ### 증감연산자
