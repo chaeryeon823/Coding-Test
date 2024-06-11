@@ -84,6 +84,11 @@ A[::3]
 arr = [1,2,3]
 arr.extend([4,5,6])
 
+# 2차원 배열 선언하기
+rows = 10
+cols = 5
+arr = [[0 for j in range(cols)] for i in range(rows)]
+
 ```
 
 ### 딕셔너리
