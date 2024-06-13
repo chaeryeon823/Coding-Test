@@ -253,6 +253,13 @@ arr = list(permutations(data, 2))
 
 # 조합(순서 상관 없는 경우의 수)
 arr = list(combinations(data, 2))
+
+# 소수점 버림
+math.floor(3.500, 2)
+math.floor(3.512 * 100) / 100
+
+# n+1자리수에서 올림
+math.round(3.555, 2)
 ```
 
 ### 라이브러리
