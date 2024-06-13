@@ -405,3 +405,36 @@ def prime_factor(n):
 **배수 판정법**
 
 - [배수 판정법 위키](https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%88%98_%ED%8C%90%EC%A0%95%EB%B2%95)
+
+**진수 변환 10진수 -> n진수**
+
+```python
+def solution(n, q):
+    rev_base = ''
+
+    while n > 0:
+        n, mod = divmod(n, q)
+        rev_base += str(mod)
+
+    return rev_base[::-1]
+    # 역순인 진수를 뒤집어 줘야 원래 변환 하고자하는 base가 출력
+
+print(solution(45, 3))
+
+```
+
+**소수 판별**
+
+```python
+import math
+
+# 소수 판별 함수
+def is_prime_number(x):
+    # 2부터 x의 제곱근까지의 모든 수를 확인하며
+    for i in range(2, int(math.sqrt(x)) + 1):
+        # x가 해당 수로 나누어떨어진다면
+        if x % i == 0:
+            return False # 소수가 아님
+    return True # 소수임
+
+```
