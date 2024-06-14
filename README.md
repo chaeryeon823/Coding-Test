@@ -1,7 +1,7 @@
 # Coding-Test
 
 
-chaeryeon832 코딩테스트 레포지토리
+chaeryeon823 코딩테스트 레포지토리
 
 - [알고리즘](https://github.com/chaeryeon823/Coding-Test/tree/main/Study/Algorithm)
 - 파이썬 문법
