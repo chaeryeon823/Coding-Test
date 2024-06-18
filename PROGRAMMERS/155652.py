@@ -1,4 +1,4 @@
-# 둘만의 암호
+# 둘 만의 암호
 # lv1
 # 97 ~ 122
 def solution(s, skip, index):
