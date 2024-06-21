@@ -104,6 +104,14 @@ for (let item of mySet) console.log(item);
 ```javascript
 // 몫
 prseInt(a / b);
+
+// 큰 값
+Math.max(a, b, c);
+Math.max(...arr);
+
+// 작은 값
+Math.min(a, b, c);
+Math.min(...arr);
 ```
 
 ### use strict

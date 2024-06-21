@@ -1,17 +1,12 @@
 let fs = require('fs');
 let input = fs.readFileSync('example.txt').toString().split('\n');
-let time = input[0].split(' ');
-let hour = Number(time[0]);
-let min = Number(time[1]);
-let oven = Number(input[1]);
-
-min += oven;
-if (min >= 60) {
-  hour += parseInt(min / 60);
-  min = min % 60;
+let mySet = new Set(input[0].split(' ').map(Number));
+let answer = 0;
+if (mySet.size == 1) {
+  answer = 10000 + mySet[0] * 1000;
+} else if (mySet.size == 2) {
+  answer = 1000 + Math.max(...mySet) * 100;
+} else {
+  answer = Math.max(...mySet) * 100;
 }
-if (hour > 23) {
-  hour -= 23;
-}
-
-console.log(hour, min);
+console.log(answer);
