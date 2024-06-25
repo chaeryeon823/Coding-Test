@@ -6,7 +6,7 @@ console.log("hello, world");
 
 // 여러 줄 출력
 for (let i = 1; i <= 100; i++) {
-  answer += i + "\n";
+    answer += i + "\n";
 }
 
 // 변수랑 문자열 섞어서 출력
@@ -34,18 +34,18 @@ let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 // readline 모듈
 // 여러줄 입력 받기
 const rl = require("readline").createInterface({
-  input: process.stdin,
-  output: process.stdout,
+    input: process.stdin,
+    output: process.stdout,
 });
 
 let input = [];
 rl.on("line", function (line) {
-  // 콘솔 입력 창에서 enter를 입력할 때 마다 호출
-  input.push(line);
+    // 콘솔 입력 창에서 enter를 입력할 때 마다 호출
+    input.push(line);
 }).on("close", function () {
-  // ctrl + c 혹은 ctrl + d 입력하면 호출
-  console.log(input);
-  process.exit();
+    // ctrl + c 혹은 ctrl + d 입력하면 호출
+    console.log(input);
+    process.exit();
 });
 
 // 한 줄 내용 나누기
@@ -88,9 +88,9 @@ let summary = data.reduce((a, b) => a + b);
 const obj = new Object();
 const obj = {};
 const obj = {
-  name: "chaeryeon",
-  familyName: "Kang",
-  age: "1000",
+    name: "chaeryeon",
+    familyName: "Kang",
+    age: "1000",
 };
 
 // 객체 추가
@@ -148,7 +148,7 @@ let arr = Array.from(Array(4), () => new Array(5));
 
 let arr = new Array(3);
 for (let i = 0; i < arr.length; i++) {
-  arr[i] = Array.from({ length: 4 }, (_, j) => i * 4 + j);
+    arr[i] = Array.from({ length: 4 }, (_, j) => i * 4 + j);
 }
 
 // 배열 합치기
@@ -223,6 +223,10 @@ s.trim();
 
 // 배열 문자열로 합치기
 arr.join("");
+
+// 문자열 자르기
+s.substring(0, 2);
+s.substring(2);
 ```
 
 ### 스택
@@ -242,72 +246,72 @@ arr.join("");
 
 ```javascript
 class Queue {
-  constructor() {
-    this.items = {};
-    this.headIndex = 0;
-    this.tailIndex = 0;
-  }
-  enqueue(item) {
-    this.items[this.tailIndex] = item;
-    this.tailIndex++;
-  }
-  dequeue() {
-    if (this.isEmpty()) {
-      return undefined;
+    constructor() {
+        this.items = {};
+        this.headIndex = 0;
+        this.tailIndex = 0;
     }
-    const item = this.items[this.headIndex];
-    delete this.items[this.headIndex];
-    this.headIndex++;
+    enqueue(item) {
+        this.items[this.tailIndex] = item;
+        this.tailIndex++;
+    }
+    dequeue() {
+        if (this.isEmpty()) {
+            return undefined;
+        }
+        const item = this.items[this.headIndex];
+        delete this.items[this.headIndex];
+        this.headIndex++;
 
-    // 너무 커지는 것을 방지
-    // if (this.isEmpty()) {
-    //   this.headIndex = 0;
-    //   this.tailIndex = 0;
-    //   this.items = {};
-    // }
-    return item;
-  }
-  peek() {
-    return this.items[this.headIndex];
-  }
-  getSize() {
-    return this.tailIndex - this.headIndex;
-  }
-  isEmpty() {
-    return this.tailIndex == this.headIndex;
-  }
-  print() {
-    console.log(Object.values(this.items));
-  }
+        // 너무 커지는 것을 방지
+        // if (this.isEmpty()) {
+        //   this.headIndex = 0;
+        //   this.tailIndex = 0;
+        //   this.items = {};
+        // }
+        return item;
+    }
+    peek() {
+        return this.items[this.headIndex];
+    }
+    getSize() {
+        return this.tailIndex - this.headIndex;
+    }
+    isEmpty() {
+        return this.tailIndex == this.headIndex;
+    }
+    print() {
+        console.log(Object.values(this.items));
+    }
 }
 ```
 
 ```javascript
 class Queue {
-  constructor() {
-    this.queue = [];
-    this.front = 0;
-    this.rear = 0;
-  }
+    constructor() {
+        this.queue = [];
+        this.front = 0;
+        this.rear = 0;
+    }
 
-  enqueue(value) {
-    this.queue[this.rear++] = value;
-  }
+    enqueue(value) {
+        this.queue[this.rear++] = value;
+    }
 
-  dequeue() {
-    const value = this.queue[this.front];
-    delete this.queue[this.front];
-    this.front++;
-    return value;
-  }
+    dequeue() {
+        const value = this.queue[this.front];
+        delete this.queue[this.front];
+        this.front++;
+        return value;
+    }
 
-  size() {
-    return this.rear - this.front;
-  }
+    size() {
+        return this.rear - this.front;
+    }
 
-  peek() {
-    return this.queue[this.front];
-  }
+    peek() {
+        return this.queue[this.front];
+    }
 }
 ```
 
