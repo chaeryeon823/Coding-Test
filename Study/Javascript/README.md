@@ -259,6 +259,17 @@ s === s.toUpperCase();
 
 // 문자열 count
 let count = str.split("a").length - 1;
+
+// 문자열이 숫자, 영어, 한글, 특수문자로 이루어져 있는지 확인
+var pattern1 = /[0-9]/; //숫자
+var pattern2 = /[a-zA-Z]/; //영어
+var pattern3 = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; //한글
+var pattern4 = /[~!@#\#$%<>^&*]/; //특수문자
+let checkEnga = /[a-z]/; //영어 소문자
+let checkEngA = /[A-Z]/; //영어 대문자
+var testStr = "테스트test";
+
+pattern1.test(testStr);
 ```
 
 ### 스택
